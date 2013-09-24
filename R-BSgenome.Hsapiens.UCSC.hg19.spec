@@ -2,13 +2,13 @@
 %global rlibdir  %{_datadir}/R/library
 
 Name:             R-%{packname}
-Version:          1.3.17
-Release:          2
+Version:          1.3.19
+Release:          1
 Summary:          Homo sapiens (Human) full genome (UCSC version hg19)
 Group:            Sciences/Mathematics
 License:          Artistic-2.0
 URL:              http://bioconductor.org/packages/release/data/annotation/html/%{packname}.html
-Source0:          http://bioconductor.org/packages/release/data/annotation/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.3.19.tar.gz
 BuildArch:        noarch
 Requires:         R-core R-BSgenome
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-BSgenome
@@ -41,3 +41,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/extdata
 %{rlibdir}/%{packname}/help
+
